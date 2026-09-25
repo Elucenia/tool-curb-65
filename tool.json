@@ -1,0 +1,179 @@
+{
+  "tool": {
+    "id": "curb-65",
+    "title": "CURB-65",
+    "short": "Gravidade da pneumonia comunitária (com CRB-65)",
+    "desc": "Calculadora CURB-65 e CRB-65: mortalidade em 30 dias na pneumonia adquirida na comunidade e local de tratamento sugerido (ambulatório, enfermaria ou UTI).",
+    "lead": "Estima a mortalidade em 30 dias de adultos com pneumonia adquirida na comunidade e ajuda a decidir entre tratamento ambulatorial e internação. O CRB-65 dispensa a ureia e serve para a atenção primária.",
+    "spec": [
+      "pneumologia",
+      "medicina-de-emergencia",
+      "infectologia",
+      "clinica-medica",
+      "medicina-de-familia-e-comunidade"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "c",
+        "<strong>C</strong>onfusão mental (desorientação nova no tempo, espaço ou pessoa)",
+        "chk",
+        []
+      ],
+      [
+        "u",
+        "<strong>U</strong>reia &gt; 42 mg/dL (&gt; 7 mmol/L)",
+        "chk",
+        []
+      ],
+      [
+        "r",
+        "F<strong>R</strong> ≥ 30 irpm",
+        "chk",
+        []
+      ],
+      [
+        "b",
+        "PA sistólica &lt; 90 mmHg ou diastólica ≤ 60 mmHg (<strong>B</strong>lood pressure)",
+        "chk",
+        []
+      ],
+      [
+        "i",
+        "Idade ≥ <strong>65</strong> anos",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p>Um ponto para cada item: <strong>C</strong>onfusão, <strong>U</strong>reia &gt; 7 mmol/L, <strong>R</strong>espiração ≥ 30/min, <strong>B</strong>aixa pressão (PAS &lt; 90 ou PAD ≤ 60 mmHg) e idade ≥ <strong>65</strong>. Máximo: 5.</p><p>O <strong>CRB-65</strong> é o mesmo escore sem a ureia (0 a 4), para uso sem laboratório.</p>",
+    "table": [
+      [
+        "CURB-65",
+        "Mortalidade em 30 dias",
+        "Conduta sugerida"
+      ],
+      [
+        "0–1",
+        "1,5%",
+        "Tratamento ambulatorial"
+      ],
+      [
+        "2",
+        "9,2%",
+        "Considerar internação"
+      ],
+      [
+        "3–5",
+        "22%",
+        "Internação; avaliar UTI com 4–5"
+      ]
+    ],
+    "table_note": "Lim 2003 (coortes de derivação e validação). CRB-65 (BTS 2009): 0 = baixo risco (&lt; 1%); 1–2 = risco aumentado (1–10%); 3–4 = alto risco (&gt; 10%).",
+    "tips": [
+      "O escore não substitui o julgamento clínico: hipoxemia (SatO₂ &lt; 92%), doença multilobar, descompensação de comorbidade ou falta de suporte social indicam internação mesmo com escore baixo.",
+      "Para decidir UTI, use os critérios de pneumonia grave da ATS/IDSA (choque séptico com vasopressor ou ventilação mecânica, ou ≥ 3 critérios menores), não só o CURB-65.",
+      "A diretriz brasileira (SBPT) costuma usar ureia &gt; 50 mg/dL; o valor original do escore é 7 mmol/L (≈ 42 mg/dL).",
+      "Em idosos, a idade já rende 1 ponto: o CURB-65 tende a superestimar o risco em idosos saudáveis e a subestimar em jovens graves.",
+      "A ATS/IDSA 2019 prefere o PSI ao CURB-65 para decidir o local de tratamento; os dois podem ser usados em conjunto."
+    ],
+    "sources": [
+      [
+        "Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax, 2003.",
+        "https://doi.org/10.1136/thorax.58.5.377"
+      ],
+      [
+        "Lim WS et al. BTS guidelines for the management of community acquired pneumonia in adults: update 2009. Thorax, 2009.",
+        "https://doi.org/10.1136/thx.2009.121434"
+      ]
+    ],
+    "cases": [
+      [
+        "Sem nenhum critério: 0 ponto",
+        [],
+        {
+          "score": 0,
+          "level": "low",
+          "raw": {
+            "crb": 0
+          }
+        }
+      ],
+      [
+        "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        {
+          "c": true,
+          "i": true
+        },
+        {
+          "score": 2,
+          "level": "mid",
+          "raw": {
+            "crb": 2
+          }
+        }
+      ],
+      [
+        "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        {
+          "c": true,
+          "u": true,
+          "r": true,
+          "i": true
+        },
+        {
+          "score": 4,
+          "level": "high",
+          "raw": {
+            "crb": 3
+          },
+          "verdict": "22%"
+        }
+      ],
+      [
+        "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        {
+          "u": true
+        },
+        {
+          "score": 1,
+          "level": "low",
+          "raw": {
+            "crb": 0
+          }
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
