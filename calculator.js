@@ -1,11 +1,11 @@
-/* tool-curb-65 · Elucenia · https://github.com/Elucenia/tool-curb-65
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-curb-65 · ELUCENIA · https://github.com/Elucenia/tool-curb-65
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"curb-65","title":"CURB-65","fields":[["c","<strong>C</strong>onfusão mental (desorientação nova no tempo, espaço ou pessoa)","chk",[]],["u","<strong>U</strong>reia &gt; 42 mg/dL (&gt; 7 mmol/L)","chk",[]],["r","F<strong>R</strong> ≥ 30 irpm","chk",[]],["b","PA sistólica &lt; 90 mmHg ou diastólica ≤ 60 mmHg (<strong>B</strong>lood pressure)","chk",[]],["i","Idade ≥ <strong>65</strong> anos","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
