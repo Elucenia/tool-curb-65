@@ -1,7 +1,17 @@
 [
   {
-    "label": "Sem nenhum critério: 0 ponto",
-    "input": {},
+    "id": "curb-65",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sem nenhum critério: 0 ponto",
+    "originalInput": [],
+    "input": {
+      "c": false,
+      "u": false,
+      "r": false,
+      "b": false,
+      "i": false
+    },
     "expected": {
       "score": 0,
       "level": "low",
@@ -9,14 +19,41 @@
         "crb": 0
       }
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "CURB-65",
+      "raw": {
+        "score": 0,
+        "crb": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
-    "input": {
+    "id": "curb-65",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+    "originalInput": {
       "c": true,
       "i": true
+    },
+    "input": {
+      "c": true,
+      "i": true,
+      "u": false,
+      "r": false,
+      "b": false
     },
     "expected": {
       "score": 2,
@@ -25,19 +62,43 @@
         "crb": 2
       }
     },
-    "originalInput": {
-      "c": true,
-      "i": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "CURB-65",
+      "raw": {
+        "score": 2,
+        "crb": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
-    "input": {
+    "id": "curb-65",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+    "originalInput": {
       "c": true,
       "u": true,
       "r": true,
       "i": true
+    },
+    "input": {
+      "c": true,
+      "u": true,
+      "r": true,
+      "i": true,
+      "b": false
     },
     "expected": {
       "score": 4,
@@ -47,18 +108,40 @@
       },
       "verdict": "22%"
     },
-    "originalInput": {
-      "c": true,
-      "u": true,
-      "r": true,
-      "i": true
+    "recordedResult": {
+      "main": [
+        "4",
+        "pontos"
+      ],
+      "label": "CURB-65",
+      "raw": {
+        "score": 4,
+        "crb": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Só ureia elevada: 1 ponto, CRB-65 = 0",
-    "input": {
+    "id": "curb-65",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+    "originalInput": {
       "u": true
+    },
+    "input": {
+      "u": true,
+      "c": false,
+      "r": false,
+      "b": false,
+      "i": false
     },
     "expected": {
       "score": 1,
@@ -67,9 +150,24 @@
         "crb": 0
       }
     },
-    "originalInput": {
-      "u": true
+    "recordedResult": {
+      "main": [
+        "1",
+        "ponto"
+      ],
+      "label": "CURB-65",
+      "raw": {
+        "score": 1,
+        "crb": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

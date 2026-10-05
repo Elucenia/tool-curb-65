@@ -1,0 +1,77 @@
+<!-- ELUCENIA technical documentation · curb-65 · ja · no clinical/professional/rights approval -->
+
+# CURB-65
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/curb-65)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### C — 意識混乱（新たな時間・場所・人物の見当識障害）
+
+`c`
+
+### U — 尿素 \> 42 mg/dL（\> 7 mmol/L）
+
+`u`
+
+### R — 呼吸数 ≥ 30 回/分
+
+`r`
+
+### 収縮期血圧 \< 90 mmHgまたは拡張期血圧 ≤ 60 mmHg（B — 血圧）
+
+`b`
+
+### 年齢 ≥ 65歳
+
+`i`
+
+## 方法の版
+
+CURB-65/Lim 2003：意識混乱、尿素\>7 mmol/L、呼吸数≥30、血圧、年齢≥65；0～5
+
+## 記載された計算式
+
+各項目1点： C（意識混乱）, U（尿素） \> 7 mmol/L, R（呼吸数） ≥ 30/min, B（低血圧：収縮期\<90または拡張期≤60 mmHg）と年齢≥ 65. 最高5。
+
+このCRB-65 は尿素を除いた同じスコア（0～4）で、検査室データなしで使えます。
+
+## 限界・対象集団
+
+2003年のCURB-65は、市中肺炎で入院した成人において、初回評価のデータと30日死亡率を用いて導出・検証されました。年齢≥ 65はスコアの一項目であり、適格年齢の下限ではありません。原来の閾値は尿素\> 7mmol/L、呼吸数≥ 30/min、収縮期血圧\< 90または拡張期血圧≤ 60 mmHgです。除外条件と他の集団での使用には、プロトコル全文の読解が必要です。
+
+## 参考文献
+
+- [Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax, 2003.](https://doi.org/10.1136/thorax.58.5.377)
+
+- [Lim WS et al. BTS guidelines for the management of community acquired pneumonia in adults: update 2009. Thorax, 2009.](https://doi.org/10.1136/thx.2009.121434)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

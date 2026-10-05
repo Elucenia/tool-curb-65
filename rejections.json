@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean c",
+    "input": {
+      "c": "2",
+      "u": false,
+      "r": false,
+      "b": false,
+      "i": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean u",
+    "input": {
+      "c": false,
+      "u": "2",
+      "r": false,
+      "b": false,
+      "i": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "u"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean r",
+    "input": {
+      "c": false,
+      "u": false,
+      "r": "2",
+      "b": false,
+      "i": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "r"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean b",
+    "input": {
+      "c": false,
+      "u": false,
+      "r": false,
+      "b": "2",
+      "i": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean i",
+    "input": {
+      "c": false,
+      "u": false,
+      "r": false,
+      "b": false,
+      "i": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "i"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

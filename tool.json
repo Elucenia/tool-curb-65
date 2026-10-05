@@ -5,6 +5,7 @@
     "short": "Gravidade da pneumonia comunitária (com CRB-65)",
     "desc": "Calculadora CURB-65 e CRB-65: mortalidade em 30 dias na pneumonia adquirida na comunidade e local de tratamento sugerido (ambulatório, enfermaria ou UTI).",
     "lead": "Estima a mortalidade em 30 dias de adultos com pneumonia adquirida na comunidade e ajuda a decidir entre tratamento ambulatorial e internação. O CRB-65 dispensa a ureia e serve para a atenção primária.",
+    "kind": "Calculadora",
     "spec": [
       "pneumologia",
       "medicina-de-emergencia",
@@ -12,70 +13,39 @@
       "clinica-medica",
       "medicina-de-familia-e-comunidade"
     ],
-    "tier": 1,
     "fields": [
       [
         "c",
         "<strong>C</strong>onfusão mental (desorientação nova no tempo, espaço ou pessoa)",
         "chk",
-        []
+        {}
       ],
       [
         "u",
         "<strong>U</strong>reia &gt; 42 mg/dL (&gt; 7 mmol/L)",
         "chk",
-        []
+        {}
       ],
       [
         "r",
         "F<strong>R</strong> ≥ 30 irpm",
         "chk",
-        []
+        {}
       ],
       [
         "b",
         "PA sistólica &lt; 90 mmHg ou diastólica ≤ 60 mmHg (<strong>B</strong>lood pressure)",
         "chk",
-        []
+        {}
       ],
       [
         "i",
         "Idade ≥ <strong>65</strong> anos",
         "chk",
-        []
+        {}
       ]
     ],
     "formula": "<p>Um ponto para cada item: <strong>C</strong>onfusão, <strong>U</strong>reia &gt; 7 mmol/L, <strong>R</strong>espiração ≥ 30/min, <strong>B</strong>aixa pressão (PAS &lt; 90 ou PAD ≤ 60 mmHg) e idade ≥ <strong>65</strong>. Máximo: 5.</p><p>O <strong>CRB-65</strong> é o mesmo escore sem a ureia (0 a 4), para uso sem laboratório.</p>",
-    "table": [
-      [
-        "CURB-65",
-        "Mortalidade em 30 dias",
-        "Conduta sugerida"
-      ],
-      [
-        "0–1",
-        "1,5%",
-        "Tratamento ambulatorial"
-      ],
-      [
-        "2",
-        "9,2%",
-        "Considerar internação"
-      ],
-      [
-        "3–5",
-        "22%",
-        "Internação; avaliar UTI com 4–5"
-      ]
-    ],
-    "table_note": "Lim 2003 (coortes de derivação e validação). CRB-65 (BTS 2009): 0 = baixo risco (&lt; 1%); 1–2 = risco aumentado (1–10%); 3–4 = alto risco (&gt; 10%).",
-    "tips": [
-      "O escore não substitui o julgamento clínico: hipoxemia (SatO₂ &lt; 92%), doença multilobar, descompensação de comorbidade ou falta de suporte social indicam internação mesmo com escore baixo.",
-      "Para decidir UTI, use os critérios de pneumonia grave da ATS/IDSA (choque séptico com vasopressor ou ventilação mecânica, ou ≥ 3 critérios menores), não só o CURB-65.",
-      "A diretriz brasileira (SBPT) costuma usar ureia &gt; 50 mg/dL; o valor original do escore é 7 mmol/L (≈ 42 mg/dL).",
-      "Em idosos, a idade já rende 1 ponto: o CURB-65 tende a superestimar o risco em idosos saudáveis e a subestimar em jovens graves.",
-      "A ATS/IDSA 2019 prefere o PSI ao CURB-65 para decidir o local de tratamento; os dois podem ser usados em conjunto."
-    ],
     "sources": [
       [
         "Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax, 2003.",
@@ -143,9 +113,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -154,17 +121,153 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T18:32:58.690Z",
+      "total": 32,
+      "passed": 32,
+      "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+      "scope": "Five one-point criteria, all 32 combinations; CRB-65 excludes urea. Mortality percentages and disposition are not tested.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CURB 65/Lim 2003:confusão, ureia>7 mmol/L, FR≥30, PA, idade≥65; 0–5",
+    "implementationVersion": "curb-65@native-2026-10-03+a39e88c8a7fa",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1746657/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada item: C onfusão, U reia > 7 mmol/L, R espiração ≥ 30/min, B aixa pressão (PAS < 90 ou PAD ≤ 60 mmHg) e idade ≥ 65 . Máximo: 5. O CRB-65 é o mesmo escore sem a ureia (0 a 4), para uso sem laboratório.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "c",
+            "label": "<strong>C</strong>onfusão mental (desorientação nova no tempo, espaço ou pessoa)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "u",
+            "label": "<strong>U</strong>reia &gt; 42 mg/dL (&gt; 7 mmol/L)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "r",
+            "label": "F<strong>R</strong> ≥ 30 irpm",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "b",
+            "label": "PA sistólica &lt; 90 mmHg ou diastólica ≤ 60 mmHg (<strong>B</strong>lood pressure)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "i",
+            "label": "Idade ≥ <strong>65</strong> anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "c7bcda5e8cf16e1c099be3470508ad6204721242eceef21e0df89b521a2bd88b"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax, 2003.",
+          "url": "https://doi.org/10.1136/thorax.58.5.377",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study.",
+            "year": "2003",
+            "firstPublicationDate": "2003-05-01",
+            "doi": "10.1136/thorax.58.5.377",
+            "pmid": "12728155",
+            "pmcid": "PMC1746657",
+            "journal": "Thorax",
+            "authors": "Lim WS, van der Eerden MM, Laing R, Boersma WG, Karalus N, Town GI, Lewis SA, Macfarlane JT."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1746657/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "7ad8daff46099d19bd862b5b789d4bae3e9c6e1cb93cf403f4de23c89073a3d6",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lim WS et al. BTS guidelines for the management of community acquired pneumonia in adults: update 2009. Thorax, 2009.",
+          "url": "https://doi.org/10.1136/thx.2009.121434",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "BTS guidelines for the management of community acquired pneumonia in adults: update 2009.",
+            "year": "2009",
+            "firstPublicationDate": "2009-10-01",
+            "doi": "10.1136/thx.2009.121434",
+            "pmid": "19783532",
+            "journal": "Thorax",
+            "authors": "Lim WS, Baudouin SV, George RC, Hill AT, Jamieson C, Le Jeune I, Macfarlane JT, Read RC, Roberts HJ, Levy ML, Wani M, Woodhead MA, Pneumonia Guidelines Committee of the BTS Standards of Care Committee."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/19783532/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T18:32:58.690Z",
+        "total": 32,
+        "passed": 32,
+        "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+        "scope": "Five one-point criteria, all 32 combinations; CRB-65 excludes urea. Mortality percentages and disposition are not tested."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38"
+    },
+    "limits": "O CURB-65 de 2003 foi derivado e validado em adultos hospitalizados com pneumonia adquirida na comunidade, usando dados da avaliação inicial e mortalidade em 30 dias. Idade ≥ 65 é um componente do escore, não a idade mínima de elegibilidade. Os limiares originais usam ureia > 7mmol/L, FR ≥ 30/min e PAS < 90 ou PAD ≤ 60 mmHg. Exclusões e uso em outras populações exigem leitura do protocolo completo.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.795Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "O resumo não fornece todas as exclusões ou validação em crianças, pneumonia nosocomial ou imunossuprimidos. Não se infere extensão de população a partir de cálculo disponível."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/curb-65/calculator.js",
+    "bytes": 5356,
+    "sha256": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "6ca6225bfb11aa6368d3e5eec8b4c55cc1ed39bd952e3746c5148cf9c0106330",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 32,
+      "sha256": "db6a6f3cb925932fbe16ac27b808a76b44509e5a6c595861d82bf1bd86267371",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
