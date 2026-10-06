@@ -75,3 +75,47 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Basso rischio: mortalità a 30 giorni dell’1,5%
+
+| Dettagli del risultato | |
+| --- | --- |
+| CRB-65 (senza l’urea) | 0 (basso rischio (mortalità < 1%)) |
+| Condotta suggerita | Candidato al trattamento ambulatoriale, se non vi sono altri motivi per il ricovero. |
+
+
+### 2
+
+Rischio intermedio: mortalità a 30 giorni del 9,2%
+
+| Dettagli del risultato | |
+| --- | --- |
+| CRB-65 (senza l’urea) | 2 (rischio aumentato (1 a 10%): considerare il ricovero in ospedale) |
+| Condotta suggerita | Considerare il ricovero (o una breve osservazione sorvegliata). |
+
+
+### 3
+
+Alto rischio: mortalità a 30 giorni del 22%
+
+| Dettagli del risultato | |
+| --- | --- |
+| CRB-65 (senza l’urea) | 3 (alto rischio (> 10%): ricovero urgente) |
+| Condotta suggerita | Ricoverare; con 4 o 5 punti, valutare la necessità di terapia intensiva. |
+
+
+### 4
+
+Basso rischio: mortalità a 30 giorni dell’1,5%
+
+| Dettagli del risultato | |
+| --- | --- |
+| CRB-65 (senza l’urea) | 0 (basso rischio (mortalità < 1%)) |
+| Condotta suggerita | Candidato al trattamento ambulatoriale, se non vi sono altri motivi per il ricovero. |
+

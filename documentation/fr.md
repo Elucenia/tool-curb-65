@@ -75,3 +75,47 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible risque : mortalité à 30 jours de 1,5%
+
+| Détails du résultat | |
+| --- | --- |
+| CRB-65 (sans l’urée) | 0 (faible risque (mortalité < 1%)) |
+| Conduite suggérée | Candidat à un traitement ambulatoire, s’il n’existe pas d’autre motif d’hospitalisation. |
+
+
+### 2
+
+Risque intermédiaire : mortalité à 30 jours de 9,2%
+
+| Détails du résultat | |
+| --- | --- |
+| CRB-65 (sans l’urée) | 2 (risque accru (1 à 10 %) : envisager une orientation vers l’hôpital) |
+| Conduite suggérée | Envisager une hospitalisation (ou une brève surveillance supervisée). |
+
+
+### 3
+
+Risque élevé : mortalité à 30 jours de 22%
+
+| Détails du résultat | |
+| --- | --- |
+| CRB-65 (sans l’urée) | 3 (risque élevé (> 10 %) : hospitalisation urgente) |
+| Conduite suggérée | Hospitaliser ; avec 4 ou 5 points, évaluer la nécessité d’une réanimation. |
+
+
+### 4
+
+Faible risque : mortalité à 30 jours de 1,5%
+
+| Détails du résultat | |
+| --- | --- |
+| CRB-65 (sans l’urée) | 0 (faible risque (mortalité < 1%)) |
+| Conduite suggérée | Candidat à un traitement ambulatoire, s’il n’existe pas d’autre motif d’hospitalisation. |
+

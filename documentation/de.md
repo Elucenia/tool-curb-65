@@ -75,3 +75,47 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges Risiko: 30-Tage-Mortalität von 1,5%
+
+| Ergebnisdetails | |
+| --- | --- |
+| CRB-65 (ohne Harnstoff) | 0 (niedriges Risiko (Mortalität < 1%)) |
+| Vorgeschlagenes Vorgehen | Kandidat für eine ambulante Behandlung, wenn es keinen anderen Grund für eine Aufnahme gibt. |
+
+
+### 2
+
+Mittleres Risiko: 30-Tage-Mortalität von 9,2%
+
+| Ergebnisdetails | |
+| --- | --- |
+| CRB-65 (ohne Harnstoff) | 2 (erhöhtes Risiko (1 bis 10%): Krankenhauseinweisung erwägen) |
+| Vorgeschlagenes Vorgehen | Krankenhausaufnahme erwägen (oder kurze überwachte Beobachtung). |
+
+
+### 3
+
+Hohes Risiko: 30-Tage-Mortalität von 22%
+
+| Ergebnisdetails | |
+| --- | --- |
+| CRB-65 (ohne Harnstoff) | 3 (hohes Risiko (> 10%): dringende Krankenhausaufnahme) |
+| Vorgeschlagenes Vorgehen | Aufnehmen; bei 4 oder 5 Punkten den Bedarf an einer Intensivstation beurteilen. |
+
+
+### 4
+
+Niedriges Risiko: 30-Tage-Mortalität von 1,5%
+
+| Ergebnisdetails | |
+| --- | --- |
+| CRB-65 (ohne Harnstoff) | 0 (niedriges Risiko (Mortalität < 1%)) |
+| Vorgeschlagenes Vorgehen | Kandidat für eine ambulante Behandlung, wenn es keinen anderen Grund für eine Aufnahme gibt. |
+

@@ -1,0 +1,285 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "curb-65",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "54bd567240fa3068ea21be23e58eb85d83e128c0",
+    "oldEngineSha256": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38",
+    "currentEngineSha256": "a2e0cb941538573e5c808bd0ae01fc52158b7df1ddb404075abe63da3b8fd1ae"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sem nenhum critério: 0 ponto",
+      "input": {
+        "c": false,
+        "u": false,
+        "r": false,
+        "b": false,
+        "i": false
+      },
+      "publicOutput": {
+        "id": "curb-65",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "raw": {
+          "score": 0,
+          "crb": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low",
+        "raw": {
+          "crb": 0
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "level": "low",
+        "verdict": "Baixo risco: mortalidade em 30 dias de 1,5%",
+        "rows": [
+          [
+            "CRB-65 (sem a ureia)",
+            "0 (baixo risco (mortalidade &lt; 1%))"
+          ],
+          [
+            "Conduta sugerida",
+            "Candidato a tratamento ambulatorial, se não houver outro motivo para internar."
+          ]
+        ],
+        "raw": {
+          "score": 0,
+          "crb": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+      "input": {
+        "c": true,
+        "i": true,
+        "u": false,
+        "r": false,
+        "b": false
+      },
+      "publicOutput": {
+        "id": "curb-65",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "raw": {
+          "score": 2,
+          "crb": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid",
+        "raw": {
+          "crb": 2
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "level": "mid",
+        "verdict": "Risco intermediário: mortalidade em 30 dias de 9,2%",
+        "rows": [
+          [
+            "CRB-65 (sem a ureia)",
+            "2 (risco aumentado (1 a 10%): considerar encaminhar ao hospital)"
+          ],
+          [
+            "Conduta sugerida",
+            "Considerar internação (ou observação curta supervisionada)."
+          ]
+        ],
+        "raw": {
+          "score": 2,
+          "crb": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+      "input": {
+        "c": true,
+        "u": true,
+        "r": true,
+        "i": true,
+        "b": false
+      },
+      "publicOutput": {
+        "id": "curb-65",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "raw": {
+          "score": 4,
+          "crb": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "high",
+        "raw": {
+          "crb": 3
+        },
+        "verdict": "22%"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "CURB-65",
+        "level": "high",
+        "verdict": "Alto risco: mortalidade em 30 dias de 22%",
+        "rows": [
+          [
+            "CRB-65 (sem a ureia)",
+            "3 (alto risco (&gt; 10%): internação urgente)"
+          ],
+          [
+            "Conduta sugerida",
+            "Internar; com 4 ou 5 pontos, avaliar necessidade de UTI."
+          ]
+        ],
+        "raw": {
+          "score": 4,
+          "crb": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+      "input": {
+        "u": true,
+        "c": false,
+        "r": false,
+        "b": false,
+        "i": false
+      },
+      "publicOutput": {
+        "id": "curb-65",
+        "main": [
+          "1",
+          "ponto"
+        ],
+        "label": "CURB-65",
+        "raw": {
+          "score": 1,
+          "crb": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "low",
+        "raw": {
+          "crb": 0
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "ponto"
+        ],
+        "label": "CURB-65",
+        "level": "low",
+        "verdict": "Baixo risco: mortalidade em 30 dias de 1,5%",
+        "rows": [
+          [
+            "CRB-65 (sem a ureia)",
+            "0 (baixo risco (mortalidade &lt; 1%))"
+          ],
+          [
+            "Conduta sugerida",
+            "Candidato a tratamento ambulatorial, se não houver outro motivo para internar."
+          ]
+        ],
+        "raw": {
+          "score": 1,
+          "crb": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

@@ -75,3 +75,47 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixo risco: mortalidade em 30 dias de 1,5%
+
+| Detalhes do resultado | |
+| --- | --- |
+| CRB-65 (sem a ureia) | 0 (baixo risco (mortalidade < 1%)) |
+| Conduta sugerida | Candidato a tratamento ambulatorial, se não houver outro motivo para internar. |
+
+
+### 2
+
+Risco intermediário: mortalidade em 30 dias de 9,2%
+
+| Detalhes do resultado | |
+| --- | --- |
+| CRB-65 (sem a ureia) | 2 (risco aumentado (1 a 10%): considerar encaminhar ao hospital) |
+| Conduta sugerida | Considerar internação (ou observação curta supervisionada). |
+
+
+### 3
+
+Alto risco: mortalidade em 30 dias de 22%
+
+| Detalhes do resultado | |
+| --- | --- |
+| CRB-65 (sem a ureia) | 3 (alto risco (> 10%): internação urgente) |
+| Conduta sugerida | Internar; com 4 ou 5 pontos, avaliar necessidade de UTI. |
+
+
+### 4
+
+Baixo risco: mortalidade em 30 dias de 1,5%
+
+| Detalhes do resultado | |
+| --- | --- |
+| CRB-65 (sem a ureia) | 0 (baixo risco (mortalidade < 1%)) |
+| Conduta sugerida | Candidato a tratamento ambulatorial, se não houver outro motivo para internar. |
+

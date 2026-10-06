@@ -75,3 +75,47 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk: 30-day mortality of 1.5%
+
+| Result details | |
+| --- | --- |
+| CRB-65 (without urea) | 0 (low risk (mortality < 1%)) |
+| Suggested management | Candidate for outpatient treatment, if there is no other reason for admission. |
+
+
+### 2
+
+Intermediate risk: 30-day mortality of 9.2%
+
+| Result details | |
+| --- | --- |
+| CRB-65 (without urea) | 2 (increased risk (1 to 10%): consider referral to the hospital) |
+| Suggested management | Consider hospitalization (or short supervised observation). |
+
+
+### 3
+
+High risk: 30-day mortality of 22%
+
+| Result details | |
+| --- | --- |
+| CRB-65 (without urea) | 3 (high risk (> 10%): urgent hospitalization) |
+| Suggested management | Admit; with 4 or 5 points, assess the need for ICU. |
+
+
+### 4
+
+Low risk: 30-day mortality of 1.5%
+
+| Result details | |
+| --- | --- |
+| CRB-65 (without urea) | 0 (low risk (mortality < 1%)) |
+| Suggested management | Candidate for outpatient treatment, if there is no other reason for admission. |
+

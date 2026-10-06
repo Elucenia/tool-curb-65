@@ -130,7 +130,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CURB 65/Lim 2003:confusão, ureia>7 mmol/L, FR≥30, PA, idade≥65; 0–5",
-    "implementationVersion": "curb-65@native-2026-10-03+a39e88c8a7fa",
+    "implementationVersion": "curb-65@native-2026-10-05+a2e0cb941538",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1746657/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -237,7 +237,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38"
+      "implementationHash": "a2e0cb941538573e5c808bd0ae01fc52158b7df1ddb404075abe63da3b8fd1ae",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "curb-65@native-2026-10-03+a39e88c8a7fa",
+          "previousImplementationHash": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38",
+          "implementationHash": "a2e0cb941538573e5c808bd0ae01fc52158b7df1ddb404075abe63da3b8fd1ae",
+          "scientificBodySha256": "290dc1a840e4eef6d9d94a7430d1a34ae3b94aa9a8e195cc9d2a020deb653902",
+          "metadataContractHash": "c7bcda5e8cf16e1c099be3470508ad6204721242eceef21e0df89b521a2bd88b",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O CURB-65 de 2003 foi derivado e validado em adultos hospitalizados com pneumonia adquirida na comunidade, usando dados da avaliação inicial e mortalidade em 30 dias. Idade ≥ 65 é um componente do escore, não a idade mínima de elegibilidade. Os limiares originais usam ureia > 7mmol/L, FR ≥ 30/min e PAS < 90 ou PAD ≤ 60 mmHg. Exclusões e uso em outras populações exigem leitura do protocolo completo.",
     "sourceLimitEvidence": {
@@ -256,15 +284,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/curb-65/calculator.js",
-    "bytes": 5356,
-    "sha256": "a39e88c8a7fa90cfacc545bb2c84a942c2cbe3532f4c6fdd7ae4b9ce1147ee38"
+    "bytes": 5561,
+    "sha256": "a2e0cb941538573e5c808bd0ae01fc52158b7df1ddb404075abe63da3b8fd1ae"
   },
-  "sourceToolSha256": "6ca6225bfb11aa6368d3e5eec8b4c55cc1ed39bd952e3746c5148cf9c0106330",
+  "sourceToolSha256": "53b70df58cb619e89fc8881a03720eecaf3834aae5eb57f702725731da4185d3",
   "omittedFullReferenceBanks": [
     {
       "rows": 32,
       "sha256": "db6a6f3cb925932fbe16ac27b808a76b44509e5a6c595861d82bf1bd86267371",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,1695 @@
+{
+  "id": "curb-65",
+  "implementationVersion": "curb-65@native-2026-10-05+a2e0cb941538",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sem a ureia)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 (baixo risco (mortalidade < 1%))",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Candidato a tratamento ambulatorial, se não houver outro motivo para internar.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Baixo risco: mortalidade em 30 dias de 1,5%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sem a ureia)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2 (risco aumentado (1 a 10%): considerar encaminhar ao hospital)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Considerar internação (ou observação curta supervisionada).",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco intermediário: mortalidade em 30 dias de 9,2%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sem a ureia)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 (alto risco (> 10%): internação urgente)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Internar; com 4 ou 5 pontos, avaliar necessidade de UTI.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto risco: mortalidade em 30 dias de 22%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sem a ureia)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 (baixo risco (mortalidade < 1%))",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Candidato a tratamento ambulatorial, se não houver outro motivo para internar.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Baixo risco: mortalidade em 30 dias de 1,5%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (without urea)",
+                "locale": "en",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (low risk (mortality < 1%))",
+                "locale": "en",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Suggested management",
+                "locale": "en",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidate for outpatient treatment, if there is no other reason for admission.",
+                "locale": "en",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low risk: 30-day mortality of 1.5%",
+            "locale": "en",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (without urea)",
+                "locale": "en",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (increased risk (1 to 10%): consider referral to the hospital)",
+                "locale": "en",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Suggested management",
+                "locale": "en",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Consider hospitalization (or short supervised observation).",
+                "locale": "en",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediate risk: 30-day mortality of 9.2%",
+            "locale": "en",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (without urea)",
+                "locale": "en",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (high risk (> 10%): urgent hospitalization)",
+                "locale": "en",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Suggested management",
+                "locale": "en",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Admit; with 4 or 5 points, assess the need for ICU.",
+                "locale": "en",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High risk: 30-day mortality of 22%",
+            "locale": "en",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (without urea)",
+                "locale": "en",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (low risk (mortality < 1%))",
+                "locale": "en",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Suggested management",
+                "locale": "en",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidate for outpatient treatment, if there is no other reason for admission.",
+                "locale": "en",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low risk: 30-day mortality of 1.5%",
+            "locale": "en",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sin la urea)",
+                "locale": "es",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (bajo riesgo (mortalidad < 1%))",
+                "locale": "es",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta sugerida",
+                "locale": "es",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidato para tratamiento ambulatorio, si no hay otro motivo para internación.",
+                "locale": "es",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bajo riesgo: mortalidad a 30 días del 1,5%",
+            "locale": "es",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sin la urea)",
+                "locale": "es",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (riesgo aumentado (1 a 10%): considerar derivación al hospital)",
+                "locale": "es",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta sugerida",
+                "locale": "es",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Considerar hospitalización (o una breve observación supervisada).",
+                "locale": "es",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo intermedio: mortalidad a 30 días del 9,2%",
+            "locale": "es",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sin la urea)",
+                "locale": "es",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (alto riesgo (> 10%): hospitalización urgente)",
+                "locale": "es",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta sugerida",
+                "locale": "es",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Ingresar; con 4 o 5 puntos, evaluar la necesidad de UCI.",
+                "locale": "es",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto riesgo: mortalidad a 30 días de 22%",
+            "locale": "es",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sin la urea)",
+                "locale": "es",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (bajo riesgo (mortalidad < 1%))",
+                "locale": "es",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta sugerida",
+                "locale": "es",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidato para tratamiento ambulatorio, si no hay otro motivo para internación.",
+                "locale": "es",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bajo riesgo: mortalidad a 30 días del 1,5%",
+            "locale": "es",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sans l’urée)",
+                "locale": "fr",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (faible risque (mortalité < 1%))",
+                "locale": "fr",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduite suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidat à un traitement ambulatoire, s’il n’existe pas d’autre motif d’hospitalisation.",
+                "locale": "fr",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Faible risque : mortalité à 30 jours de 1,5%",
+            "locale": "fr",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sans l’urée)",
+                "locale": "fr",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (risque accru (1 à 10 %) : envisager une orientation vers l’hôpital)",
+                "locale": "fr",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduite suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Envisager une hospitalisation (ou une brève surveillance supervisée).",
+                "locale": "fr",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque intermédiaire : mortalité à 30 jours de 9,2%",
+            "locale": "fr",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sans l’urée)",
+                "locale": "fr",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (risque élevé (> 10 %) : hospitalisation urgente)",
+                "locale": "fr",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduite suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Hospitaliser ; avec 4 ou 5 points, évaluer la nécessité d’une réanimation.",
+                "locale": "fr",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque élevé : mortalité à 30 jours de 22%",
+            "locale": "fr",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (sans l’urée)",
+                "locale": "fr",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (faible risque (mortalité < 1%))",
+                "locale": "fr",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduite suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidat à un traitement ambulatoire, s’il n’existe pas d’autre motif d’hospitalisation.",
+                "locale": "fr",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Faible risque : mortalité à 30 jours de 1,5%",
+            "locale": "fr",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (ohne Harnstoff)",
+                "locale": "de",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (niedriges Risiko (Mortalität < 1%))",
+                "locale": "de",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen",
+                "locale": "de",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Kandidat für eine ambulante Behandlung, wenn es keinen anderen Grund für eine Aufnahme gibt.",
+                "locale": "de",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Risiko: 30-Tage-Mortalität von 1,5%",
+            "locale": "de",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (ohne Harnstoff)",
+                "locale": "de",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (erhöhtes Risiko (1 bis 10%): Krankenhauseinweisung erwägen)",
+                "locale": "de",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen",
+                "locale": "de",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Krankenhausaufnahme erwägen (oder kurze überwachte Beobachtung).",
+                "locale": "de",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mittleres Risiko: 30-Tage-Mortalität von 9,2%",
+            "locale": "de",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (ohne Harnstoff)",
+                "locale": "de",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (hohes Risiko (> 10%): dringende Krankenhausaufnahme)",
+                "locale": "de",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen",
+                "locale": "de",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Aufnehmen; bei 4 oder 5 Punkten den Bedarf an einer Intensivstation beurteilen.",
+                "locale": "de",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Risiko: 30-Tage-Mortalität von 22%",
+            "locale": "de",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (ohne Harnstoff)",
+                "locale": "de",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (niedriges Risiko (Mortalität < 1%))",
+                "locale": "de",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen",
+                "locale": "de",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Kandidat für eine ambulante Behandlung, wenn es keinen anderen Grund für eine Aufnahme gibt.",
+                "locale": "de",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Risiko: 30-Tage-Mortalität von 1,5%",
+            "locale": "de",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (senza l’urea)",
+                "locale": "it",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (basso rischio (mortalità < 1%))",
+                "locale": "it",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta suggerita",
+                "locale": "it",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidato al trattamento ambulatoriale, se non vi sono altri motivi per il ricovero.",
+                "locale": "it",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Basso rischio: mortalità a 30 giorni dell’1,5%",
+            "locale": "it",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (senza l’urea)",
+                "locale": "it",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (rischio aumentato (1 a 10%): considerare il ricovero in ospedale)",
+                "locale": "it",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta suggerita",
+                "locale": "it",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Considerare il ricovero (o una breve osservazione sorvegliata).",
+                "locale": "it",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio intermedio: mortalità a 30 giorni del 9,2%",
+            "locale": "it",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (senza l’urea)",
+                "locale": "it",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (alto rischio (> 10%): ricovero urgente)",
+                "locale": "it",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta suggerita",
+                "locale": "it",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Ricoverare; con 4 o 5 punti, valutare la necessità di terapia intensiva.",
+                "locale": "it",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto rischio: mortalità a 30 giorni del 22%",
+            "locale": "it",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (senza l’urea)",
+                "locale": "it",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (basso rischio (mortalità < 1%))",
+                "locale": "it",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta suggerita",
+                "locale": "it",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "Candidato al trattamento ambulatoriale, se non vi sono altri motivi per il ricovero.",
+                "locale": "it",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Basso rischio: mortalità a 30 giorni dell’1,5%",
+            "locale": "it",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (بدون اليوريا)",
+                "locale": "ar",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "٠ (خطورة منخفضة (وفيات < 1%))",
+                "locale": "ar",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير المقترح",
+                "locale": "ar",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "مرشح للعلاج الخارجي، إذا لم يكن هناك سبب آخر للدخول للمستشفى.",
+                "locale": "ar",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة منخفضة: وفيات خلال 30 يومًا بنسبة 1,5%",
+            "locale": "ar",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (بدون اليوريا)",
+                "locale": "ar",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "٢ (خطر متزايد (1 إلى 10%): النظر في الإحالة إلى المستشفى)",
+                "locale": "ar",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير المقترح",
+                "locale": "ar",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "النظر في الإدخال إلى المستشفى (أو الملاحظة القصيرة تحت الإشراف).",
+                "locale": "ar",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة متوسطة: وفيات خلال 30 يومًا بنسبة 9,2%",
+            "locale": "ar",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (بدون اليوريا)",
+                "locale": "ar",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "٣ (خطر مرتفع (> 10%): إدخال عاجل إلى المستشفى)",
+                "locale": "ar",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير المقترح",
+                "locale": "ar",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "إدخال المريض إلى المستشفى؛ مع 4 أو 5 نقاط، تقييم الحاجة إلى العناية المركزة.",
+                "locale": "ar",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر مرتفع: معدل وفيات خلال 30 يومًا بنسبة 22%",
+            "locale": "ar",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (بدون اليوريا)",
+                "locale": "ar",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "٠ (خطورة منخفضة (وفيات < 1%))",
+                "locale": "ar",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير المقترح",
+                "locale": "ar",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "مرشح للعلاج الخارجي، إذا لم يكن هناك سبب آخر للدخول للمستشفى.",
+                "locale": "ar",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة منخفضة: وفيات خلال 30 يومًا بنسبة 1,5%",
+            "locale": "ar",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（不含尿素）",
+                "locale": "zh",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0（低风险（死亡率 < 1%））",
+                "locale": "zh",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "建议处理",
+                "locale": "zh",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "如无其他住院原因，可考虑门诊治疗。",
+                "locale": "zh",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低风险：30天死亡率为1.5%",
+            "locale": "zh",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（不含尿素）",
+                "locale": "zh",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2（风险增加（1到10%）：考虑转诊至医院）",
+                "locale": "zh",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "建议处理",
+                "locale": "zh",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "考虑住院（或短期监督观察）。",
+                "locale": "zh",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等风险：30天死亡率为9.2%",
+            "locale": "zh",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（不含尿素）",
+                "locale": "zh",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3（高风险（> 10%）：紧急住院）",
+                "locale": "zh",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "建议处理",
+                "locale": "zh",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "住院；4或5分时，评估是否需要ICU。",
+                "locale": "zh",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高风险：30天死亡率为22%",
+            "locale": "zh",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（不含尿素）",
+                "locale": "zh",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0（低风险（死亡率 < 1%））",
+                "locale": "zh",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "建议处理",
+                "locale": "zh",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "如无其他住院原因，可考虑门诊治疗。",
+                "locale": "zh",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低风险：30天死亡率为1.5%",
+            "locale": "zh",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（尿素なし）",
+                "locale": "ja",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0（低リスク（死亡率 < 1%））",
+                "locale": "ja",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推奨される対応",
+                "locale": "ja",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "入院の別の理由がなければ、外来治療の候補です。",
+                "locale": "ja",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低リスク：30日死亡率1.5%",
+            "locale": "ja",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（尿素なし）",
+                "locale": "ja",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2（リスク増加（1～10%）：入院紹介を検討）",
+                "locale": "ja",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推奨される対応",
+                "locale": "ja",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "入院（または短時間の監督下観察）を検討する。",
+                "locale": "ja",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等リスク：30日死亡率9.2%",
+            "locale": "ja",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（尿素なし）",
+                "locale": "ja",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3（高リスク（> 10%）：緊急入院）",
+                "locale": "ja",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推奨される対応",
+                "locale": "ja",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "入院させる；4または5点ではICUの必要性を評価する。",
+                "locale": "ja",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高リスク：30日死亡率22%",
+            "locale": "ja",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65（尿素なし）",
+                "locale": "ja",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0（低リスク（死亡率 < 1%））",
+                "locale": "ja",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "推奨される対応",
+                "locale": "ja",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "入院の別の理由がなければ、外来治療の候補です。",
+                "locale": "ja",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低リスク：30日死亡率1.5%",
+            "locale": "ja",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sem nenhum critério: 0 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (यूरिया के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (कम जोखिम (मृत्यु दर < 1%))",
+                "locale": "hi",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सुझाई गई चिकित्सा",
+                "locale": "hi",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "यदि भर्ती का कोई अन्य कारण न हो, तो बाह्य रोगी उपचार के लिए उपयुक्त।",
+                "locale": "hi",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम जोखिम: 30 दिनों की मृत्यु दर 1.5%",
+            "locale": "hi",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confuso e com 70 anos: 2 pontos (CRB-65 = 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (यूरिया के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "2 (जोखिम बढ़ा हुआ (1 से 10%): अस्पताल में रेफरल पर विचार करें)",
+                "locale": "hi",
+                "template": "documented-authored-3b86be11507ada34f2c1",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सुझाई गई चिकित्सा",
+                "locale": "hi",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "अस्पताल में भर्ती पर विचार करें (या संक्षिप्त पर्यवेक्षित अवलोकन)।",
+                "locale": "hi",
+                "template": "documented-authored-01ff3108a473e797b661"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम जोखिम: 30 दिनों की मृत्यु दर 9.2%",
+            "locale": "hi",
+            "template": "documented-authored-98a53ddadc818d33f175"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Confuso, ureia 60, FR 32, 78 anos: 4 pontos (CRB-65 = 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (यूरिया के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "3 (उच्च जोखिम (> 10%): तत्काल अस्पताल में भर्ती)",
+                "locale": "hi",
+                "template": "documented-authored-2f6722c235f3d13f54fd",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सुझाई गई चिकित्सा",
+                "locale": "hi",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "भर्ती करें; 4 या 5 अंक होने पर ICU की आवश्यकता का मूल्यांकन करें।",
+                "locale": "hi",
+                "template": "documented-authored-121c41d73d218134f2ce"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च जोखिम: 30 दिनों की मृत्यु दर 22%",
+            "locale": "hi",
+            "template": "documented-authored-0baefc66f315e70805fe"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Só ureia elevada: 1 ponto, CRB-65 = 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "CRB-65 (यूरिया के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-71658ea8ff5671f1a11d"
+              },
+              "value": {
+                "text": "0 (कम जोखिम (मृत्यु दर < 1%))",
+                "locale": "hi",
+                "template": "documented-authored-bd74b60ee3cd76c4d146",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सुझाई गई चिकित्सा",
+                "locale": "hi",
+                "template": "documented-authored-2d3f523ba2efcc076d5f"
+              },
+              "value": {
+                "text": "यदि भर्ती का कोई अन्य कारण न हो, तो बाह्य रोगी उपचार के लिए उपयुक्त।",
+                "locale": "hi",
+                "template": "documented-authored-e66ab7a04efee63da7b3"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम जोखिम: 30 दिनों की मृत्यु दर 1.5%",
+            "locale": "hi",
+            "template": "documented-authored-0b6ce59291dd27bf2a42"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}
